@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: aegispay-os
+    env: python
+    buildCommand: "python3 -m py_compile server.py"
+    startCommand: "python3 server.py 10000"
+    plan: free
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: PAYPAL_MODE
+        value: sandbox
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
