@@ -97,7 +97,7 @@ Built using **AG Grid Community Edition** with a custom dark fintech theme:
 ### Run Locally (1 Command)
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/aegispay.git
+git clone https://github.com/abhijit-SIT/aegispay.git
 cd aegispay
 
 # Launch the server
