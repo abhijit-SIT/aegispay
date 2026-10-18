@@ -42,6 +42,11 @@
     </div>
 
     <div class="header-actions">
+      <button class="btn btn-demo-reel" id="btnStartDemoTour" onclick="window.AegisDemoTour.start()" title="Play full automated 3-minute voice-narrated product demo tour">
+        <span class="pulse-recording-dot"></span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        <span>Play AI Demo Tour</span>
+      </button>
       <button class="btn btn-cyan" onclick="document.querySelector('#modalNewWallet').classList.add('active')">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
         New Scoped Wallet
@@ -532,5 +537,6 @@ curl -X POST http://localhost:8080/api/agent/transact \
   <script src="js/agent-engine.js"></script>
   <script src="js/paypal-integration.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/demo-tour.js"></script>
 </body>
 </html>
